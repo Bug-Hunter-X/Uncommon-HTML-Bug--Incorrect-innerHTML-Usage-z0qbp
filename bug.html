@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This is some text.
+  </div>
+  <script>
+    // Incorrect use of innerHTML with an object
+    document.getElementById('myDiv').innerHTML = { some: 'object' };
+  </script>
+</body>
+</html>
