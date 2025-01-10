@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    This is some text.
+  </div>
+  <script>
+    // Correct usage of innerHTML with a string
+    let myObject = { some: 'object' };
+    document.getElementById('myDiv').innerHTML = JSON.stringify(myObject); 
+
+    //Or if you just want to display text:
+    // document.getElementById('myDiv').textContent = "some text";
+  </script>
+</body>
+</html>
